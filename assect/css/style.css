@@ -67,12 +67,11 @@ a{
 /* top banner start  */
 .top-banner{
     width: 80%;
-    height: 500px;
     background-color: #F6F5FC;
     border-radius: 20px;
     margin: 0px auto;
-    border: 1px solid red;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .banner-content{
     width: 40%;
@@ -96,6 +95,10 @@ a{
     padding: 10px 30px;
     background-color: #6c55f9;
     border-radius: 28px;
+    width: 28%;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
 }
 .banner-content a span{
     font-weight: 400;
@@ -111,4 +114,76 @@ a{
     width: 40%;
     margin-top: 50px;
 }
+.banner-icon{
+    margin-top: 5px;
+    margin-left: 5px;
+}
 /* top banner end  */
+/* work category start  */
+.work-categorys{
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.work-categorys-card{
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.681) , -2px -2px 2px rgba(128, 128, 128, 0.681);
+    width: 300px;
+    height: 349px;
+}
+.work-categorys-card-image{
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.work-categorys-card-content{
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+.work-categorys-card-content h1{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #645f88; 
+}
+.work-categorys-card-content p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #898798; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.work-categorys-card-content a{
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #553fe6;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+/* work category end  */
+
+
+/* media query  */
+@media only screen and (max-width: 601px) {
+    /* banner part  */
+    .top-banner{
+        display: block;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    /* banner part start  */
+    .work-categorys{
+        margin-top: 50px;
+    }
+    .work-categorys-card{
+        margin-bottom: 30px;
+    }
+    
+}
